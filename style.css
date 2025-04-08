@@ -228,8 +228,23 @@ nav ul li a:hover::after{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
-    max-height: 450px; 
+    max-height: 420px; 
     overflow-y: auto; 
+}
+
+.work-list::-webkit-scrollbar {
+    width: 10px; /* Adjust the width of the scrollbar */
+}
+
+.work-list::-webkit-scrollbar-thumb {
+    background: #ff004f; 
+    border-radius: 6px; 
+}
+
+.work-list::-webkit-scrollbar-track {
+    background: #262626;
+    border-radius: 6px; 
+
 }
 
 .work {
@@ -476,13 +491,9 @@ nav .hide-icon{
     }
 
     .work-list {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        grid-gap: 40px;
-        margin-top: 50px;
-        max-height: 750px;
-        overflow-y: auto; 
+        max-height: 730px;
     }
+
 
 }
 
