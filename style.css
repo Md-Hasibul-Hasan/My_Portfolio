@@ -225,10 +225,10 @@ nav ul li a:hover::after{
 
 .work-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
-    max-height: 420px; 
+    max-height: 440px; 
     overflow-y: auto; 
 }
 
@@ -491,7 +491,7 @@ nav .hide-icon{
     }
 
     .work-list {
-        max-height: 730px;
+        max-height: 790px;
     }
 
 
