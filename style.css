@@ -496,7 +496,7 @@ nav .hide-icon{
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         grid-gap: 40px;
         margin-top: 50px;
-        max-height: 790px; 
+        max-height: 760px; 
         overflow-y: auto; 
     }
 
