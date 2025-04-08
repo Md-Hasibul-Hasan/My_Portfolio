@@ -228,10 +228,10 @@ nav ul li a:hover::after{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
-    /* max-height: 400px; 
-    overflow-y: auto;  */
+    max-height: 420px; 
+    overflow-y: auto; 
 }
-/* 
+
 .work-list::-webkit-scrollbar {
     width: 10px; 
 }
@@ -245,7 +245,7 @@ nav ul li a:hover::after{
     background: #262626;
     border-radius: 6px; 
 
-} */
+} 
 
 .work {
     border-radius: 10px;
@@ -490,9 +490,9 @@ nav .hide-icon{
         flex-basis: 100%;
     }
 
-    /* .work-list {
-        max-height: 790px;
-    } */
+    .work-list {
+        max-height: 780px;
+    }
 
 
 }
