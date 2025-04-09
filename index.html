@@ -38,7 +38,13 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>I’m Md. Hasibul Hasan, a passionate Full Stack Developer specializing in Django and React. Currently pursuing my B.Sc in Computer Science & Engineering at Kishoreganj University, I love building dynamic and user-friendly web applications. I'm also experienced in IoT, machine learning, and data analysis. Always curious and eager to learn, I enjoy turning ideas into real-world solutions through code.</p>
+                    <p>
+                        I’m Md. Hasibul Hasan, a passionate Full Stack Developer specializing in Django and React. 
+                        Currently pursuing my B.Sc in Computer Science & Engineering at Kishoreganj University, 
+                        I love building dynamic and user-friendly web applications. I'm also experienced in IoT, 
+                        machine learning, and data analysis. Always curious and eager to learn, I enjoy turning 
+                        ideas into real-world solutions through code.
+                    </p>
 
                     <div class="tab-title">
                         <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
@@ -285,6 +291,34 @@
         .catch(error => console.error('Error!', error.message))
     })
     </script>
+
+
+<script>
+    const sections = document.querySelectorAll('#header, #about, #services, #portfolio, #contact');
+    const navLinks = document.querySelectorAll('nav ul li a');
+
+    window.addEventListener('scroll', () => {
+        let currentSection = '';
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 150;
+            const sectionHeight = section.offsetHeight;
+
+            if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
+                currentSection = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${currentSection}`) {
+                link.classList.add('active');
+            }
+        });
+    });
+</script>
+
+
 
 
     <script>
