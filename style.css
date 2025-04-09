@@ -47,6 +47,18 @@ nav {
     padding: 0px 5%;
 }
 
+
+nav.transparent {
+    background: transparent;
+    transition: background 0.5s ease;
+}
+
+nav.solid {
+    background: #080808;
+    transition: background 0.5s ease;
+}
+
+
 .logo{
     width: 140px;
 }

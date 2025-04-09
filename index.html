@@ -11,7 +11,7 @@
 
     <div id="header">
         <div class="container">
-            <nav>
+            <nav class="transparent">
                 <img src="images/logo.png" alt="@logo" class="logo">
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
@@ -242,6 +242,8 @@
 </div>
     
 
+<!-- script for showing and hiding tab contents in about me -->
+
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
@@ -258,6 +260,10 @@
         }
     </script>
 
+
+
+<!-- script for hamburger menu -->
+
     <script>
 
         var sidemenu = document.getElementById("sidemenu");
@@ -272,6 +278,10 @@
 
 
     </script>
+
+
+
+<!-- sccript for recieve msg in google sheet -->
 
     <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbyJdMLE75b-Vb8hVmJrzGSH6SF7j16Gwp54D4BNduZcuohq15lpF8W4UPW4tvkZXl80zQ/exec'
@@ -292,6 +302,24 @@
     })
     </script>
 
+<!-- for transparent navbar -->
+
+<script>
+    const nav = document.querySelector('nav');
+
+    window.addEventListener('scroll', () => {
+        if(window.scrollY < 100){
+            nav.classList.add('transparent');
+            nav.classList.remove('solid');
+        } else {
+            nav.classList.add('solid');
+            nav.classList.remove('transparent');
+        }
+    });
+</script>
+
+
+<!-- for active navbar underline while scrolling -->
 
 <script>
     const sections = document.querySelectorAll('#header, #about, #services, #portfolio, #contact');
@@ -320,6 +348,7 @@
 
 
 
+ <!-- for writing typing effect -->
 
     <script>
         const text = "Passionate  React & Django Developer";
